@@ -7,7 +7,11 @@
 
 import UIKit
 import SnapKit
+import RxCocoa
+import RxSwift
 class SignUpViewController: UIViewController {
+    
+    let disposeBag = DisposeBag()
     
     private lazy var titleLabel: UILabel = {
         let title = UILabel()
@@ -68,12 +72,27 @@ class SignUpViewController: UIViewController {
         return textField
     }()
     
+    private lazy var signUpButton: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = .systemBlue
+        button.layer.cornerRadius = 25
+        button.backgroundColor = UIColor(red: 99/255, green: 115/255, blue: 255/255, alpha: 1)
+        button.setTitle("Sign Up", for: .normal)
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         
         setupConstraints()
+        setupNavigation()
+        signUp()
     }
+    private func setupNavigation() {
+        navigationController?.navigationBar.tintColor = .black
+    }
+    
     private func setupConstraints() {
         
         view.addSubview(titleLabel)
@@ -83,6 +102,7 @@ class SignUpViewController: UIViewController {
         passwordTextField.addSubview(iconPasswordImage)
         view.addSubview(confirmPasswordTextField)
         confirmPasswordTextField.addSubview(confirmIconPasswordImage)
+        view.addSubview(signUpButton)
         
         titleLabel.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide).offset(20)
@@ -125,7 +145,21 @@ class SignUpViewController: UIViewController {
             make.centerY.equalToSuperview()
             make.height.width.equalTo(24)
         }
+        signUpButton.snp.makeConstraints { make in
+            make.top.equalTo(confirmPasswordTextField.snp.bottom).offset(30)
+            make.centerX.equalToSuperview()
+            make.height.equalTo(50)
+            make.width.equalTo(180)
+        }
+    }
+    private func signUp() {
+        signUpButton
+            .rx
+            .tap
+            .bind {
+                self.navigationController?.popToRootViewController(animated: true)
+            }.disposed(by: disposeBag)
+        
+    }
     }
     
-    
-}
