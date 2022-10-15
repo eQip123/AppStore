@@ -95,6 +95,7 @@ class SignInViewController: UIViewController {
         view.backgroundColor = .white
         setupConstraints()
         signUp()
+        forgotPassword()
     }
     
     private func setupConstraints() {
@@ -172,6 +173,15 @@ class SignInViewController: UIViewController {
                 self.navigationController?.pushViewController(signUpViewController, animated: true)
             }.disposed(by: disposeBag)
         
+    }
+    private func forgotPassword() {
+        forgotButton
+            .rx
+            .tap
+            .bind{
+                let forgotPassword = ForgotViewController()
+                self.navigationController?.pushViewController(forgotPassword, animated: true)
+            }.disposed(by: disposeBag)
     }
 }
 
