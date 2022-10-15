@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C26214C28FAA9D3003CE325 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1C26214B28FAA9D3003CE325 /* SnapKit */; };
+		1C26214F28FAA9FC003CE325 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1C26214E28FAA9FC003CE325 /* RxCocoa */; };
+		1C26215128FAA9FC003CE325 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 1C26215028FAA9FC003CE325 /* RxRelay */; };
+		1C26215328FAA9FC003CE325 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1C26215228FAA9FC003CE325 /* RxSwift */; };
+		1C26215828FAC2DA003CE325 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26215728FAC2DA003CE325 /* CustomTextField.swift */; };
 		1CA7062E28F858F6003DFCC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA7062D28F858F6003DFCC1 /* AppDelegate.swift */; };
 		1CA7063028F858F6003DFCC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA7062F28F858F6003DFCC1 /* SceneDelegate.swift */; };
-		1CA7063228F858F6003DFCC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA7063128F858F6003DFCC1 /* ViewController.swift */; };
-		1CA7063528F858F6003DFCC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CA7063328F858F6003DFCC1 /* Main.storyboard */; };
+		1CA7063228F858F6003DFCC1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA7063128F858F6003DFCC1 /* SignInViewController.swift */; };
 		1CA7063728F858F7003DFCC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CA7063628F858F7003DFCC1 /* Assets.xcassets */; };
 		1CA7063A28F858F7003DFCC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CA7063828F858F7003DFCC1 /* LaunchScreen.storyboard */; };
+		1CDFA96C28FAD72900F78CB4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDFA96B28FAD72900F78CB4 /* SignUpViewController.swift */; };
+		1CDFA97428FAE31C00F78CB4 /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDFA97328FAE31C00F78CB4 /* ForgotViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C26215728FAC2DA003CE325 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		1CA7062A28F858F6003DFCC1 /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CA7062D28F858F6003DFCC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CA7062F28F858F6003DFCC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1CA7063128F858F6003DFCC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1CA7063428F858F6003DFCC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CA7063128F858F6003DFCC1 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		1CA7063628F858F7003DFCC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CA7063928F858F7003DFCC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CA7063B28F858F7003DFCC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CDFA96B28FAD72900F78CB4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		1CDFA97328FAE31C00F78CB4 /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +39,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C26215128FAA9FC003CE325 /* RxRelay in Frameworks */,
+				1C26214F28FAA9FC003CE325 /* RxCocoa in Frameworks */,
+				1C26215328FAA9FC003CE325 /* RxSwift in Frameworks */,
+				1C26214C28FAA9D3003CE325 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C26215628FAC2BF003CE325 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1C26215728FAC2DA003CE325 /* CustomTextField.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		1CA7062128F858F6003DFCC1 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +76,65 @@
 		1CA7062C28F858F6003DFCC1 /* AppStore */ = {
 			isa = PBXGroup;
 			children = (
-				1CA7062D28F858F6003DFCC1 /* AppDelegate.swift */,
-				1CA7062F28F858F6003DFCC1 /* SceneDelegate.swift */,
-				1CA7063128F858F6003DFCC1 /* ViewController.swift */,
-				1CA7063328F858F6003DFCC1 /* Main.storyboard */,
-				1CA7063628F858F7003DFCC1 /* Assets.xcassets */,
+				1CDFA96D28FAD7D200F78CB4 /* SignInModule */,
+				1CDFA96F28FAD86200F78CB4 /* SignUpModule */,
+				1CDFA97228FAE2FB00F78CB4 /* ForgotModule */,
+				1CDFA97028FAD87500F78CB4 /* AppDelegate */,
+				1C26215628FAC2BF003CE325 /* Extension */,
 				1CA7063828F858F7003DFCC1 /* LaunchScreen.storyboard */,
+				1CA7063628F858F7003DFCC1 /* Assets.xcassets */,
 				1CA7063B28F858F7003DFCC1 /* Info.plist */,
 			);
 			path = AppStore;
+			sourceTree = "<group>";
+		};
+		1CDFA96D28FAD7D200F78CB4 /* SignInModule */ = {
+			isa = PBXGroup;
+			children = (
+				1CDFA96E28FAD84B00F78CB4 /* View */,
+			);
+			path = SignInModule;
+			sourceTree = "<group>";
+		};
+		1CDFA96E28FAD84B00F78CB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1CA7063128F858F6003DFCC1 /* SignInViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1CDFA96F28FAD86200F78CB4 /* SignUpModule */ = {
+			isa = PBXGroup;
+			children = (
+				1CDFA97128FAD89900F78CB4 /* View */,
+			);
+			path = SignUpModule;
+			sourceTree = "<group>";
+		};
+		1CDFA97028FAD87500F78CB4 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1CA7062D28F858F6003DFCC1 /* AppDelegate.swift */,
+				1CA7062F28F858F6003DFCC1 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1CDFA97128FAD89900F78CB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1CDFA96B28FAD72900F78CB4 /* SignUpViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1CDFA97228FAE2FB00F78CB4 /* ForgotModule */ = {
+			isa = PBXGroup;
+			children = (
+				1CDFA97328FAE31C00F78CB4 /* ForgotViewController.swift */,
+			);
+			path = ForgotModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +153,12 @@
 			dependencies = (
 			);
 			name = AppStore;
+			packageProductDependencies = (
+				1C26214B28FAA9D3003CE325 /* SnapKit */,
+				1C26214E28FAA9FC003CE325 /* RxCocoa */,
+				1C26215028FAA9FC003CE325 /* RxRelay */,
+				1C26215228FAA9FC003CE325 /* RxSwift */,
+			);
 			productName = AppStore;
 			productReference = 1CA7062A28F858F6003DFCC1 /* AppStore.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +187,10 @@
 				Base,
 			);
 			mainGroup = 1CA7062128F858F6003DFCC1;
+			packageReferences = (
+				1C26214A28FAA9D3003CE325 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				1C26214D28FAA9FC003CE325 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 1CA7062B28F858F6003DFCC1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +207,6 @@
 			files = (
 				1CA7063A28F858F7003DFCC1 /* LaunchScreen.storyboard in Resources */,
 				1CA7063728F858F7003DFCC1 /* Assets.xcassets in Resources */,
-				1CA7063528F858F6003DFCC1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +217,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CA7063228F858F6003DFCC1 /* ViewController.swift in Sources */,
+				1C26215828FAC2DA003CE325 /* CustomTextField.swift in Sources */,
+				1CA7063228F858F6003DFCC1 /* SignInViewController.swift in Sources */,
 				1CA7062E28F858F6003DFCC1 /* AppDelegate.swift in Sources */,
 				1CA7063028F858F6003DFCC1 /* SceneDelegate.swift in Sources */,
+				1CDFA96C28FAD72900F78CB4 /* SignUpViewController.swift in Sources */,
+				1CDFA97428FAE31C00F78CB4 /* ForgotViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1CA7063328F858F6003DFCC1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1CA7063428F858F6003DFCC1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1CA7063828F858F7003DFCC1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +365,8 @@
 				INFOPLIST_FILE = AppStore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +393,8 @@
 				INFOPLIST_FILE = AppStore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +432,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1C26214A28FAA9D3003CE325 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		1C26214D28FAA9FC003CE325 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1C26214B28FAA9D3003CE325 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C26214A28FAA9D3003CE325 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		1C26214E28FAA9FC003CE325 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C26214D28FAA9FC003CE325 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		1C26215028FAA9FC003CE325 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C26214D28FAA9FC003CE325 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		1C26215228FAA9FC003CE325 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C26214D28FAA9FC003CE325 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1CA7062228F858F6003DFCC1 /* Project object */;
 }
