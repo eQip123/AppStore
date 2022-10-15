@@ -1,21 +1,18 @@
 //
-//  ViewController.swift
+//  SignUpViewController.swift
 //  AppStore
 //
-//  Created by Aidar Asanakunov on 13/10/22.
+//  Created by Aidar Asanakunov on 15/10/22.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .white
-        
     }
-
-
+    
 }
-
