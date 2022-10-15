@@ -58,14 +58,14 @@ class SignInViewController: UIViewController {
     private lazy var iconPasswordImage: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(systemName: "lock")
-        imageView.tintColor = .init(red: 189/255, green: 189/255, blue: 189/255, alpha: 1)
+        imageView.tintColor = UIColor(red: 189/255, green: 189/255, blue: 189/255, alpha: 1)
         return imageView
     }()
     
     private lazy var forgotButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Forgot password?", for: .normal)
-        button.setTitleColor(UIColor.init(red: 99/255, green: 115/255, blue: 255/255, alpha: 1), for: .normal)
+        button.setTitleColor(UIColor(red: 99/255, green: 115/255, blue: 255/255, alpha: 1), for: .normal)
         button.titleLabel?.font = UIFont(name: "SF Pro Display", size: 14)
         button.titleLabel?.font = .systemFont(ofSize: 14, weight: .medium)
         return button
@@ -75,7 +75,7 @@ class SignInViewController: UIViewController {
         let button = UIButton()
         button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 25
-        button.backgroundColor = UIColor.init(red: 99/255, green: 115/255, blue: 255/255, alpha: 1)
+        button.backgroundColor = UIColor(red: 99/255, green: 115/255, blue: 255/255, alpha: 1)
         button.setTitle("Sign In", for: .normal)
         return button
     }()
@@ -83,7 +83,7 @@ class SignInViewController: UIViewController {
     private lazy var signUpButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Sign Up", for: .normal)
-        button.setTitleColor(UIColor.init(red: 99/255, green: 115/255, blue: 255/255, alpha: 1), for: .normal)
+        button.setTitleColor(UIColor(red: 99/255, green: 115/255, blue: 255/255, alpha: 1), for: .normal)
         button.titleLabel?.font = UIFont(name: "SF Pro Display", size: 17)
         button.titleLabel?.font = .systemFont(ofSize: 17, weight: .medium)
         return button
