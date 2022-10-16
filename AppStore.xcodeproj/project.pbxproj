@@ -24,6 +24,8 @@
 		AD53C24B28FBCA5A00D5C87F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C24A28FBCA5A00D5C87F /* SignUpViewModel.swift */; };
 		AD53C24D28FBCA6400D5C87F /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C24C28FBCA6400D5C87F /* SignUpModel.swift */; };
 		AD53C25028FC3AE100D5C87F /* SomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C24F28FC3AE100D5C87F /* SomeViewController.swift */; };
+		AD53C25228FC42C800D5C87F /* ForgotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C25128FC42C800D5C87F /* ForgotViewModel.swift */; };
+		AD53C25528FC42DA00D5C87F /* ForgotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C25428FC42DA00D5C87F /* ForgotModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		AD53C24A28FBCA5A00D5C87F /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		AD53C24C28FBCA6400D5C87F /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		AD53C24F28FC3AE100D5C87F /* SomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeViewController.swift; sourceTree = "<group>"; };
+		AD53C25128FC42C800D5C87F /* ForgotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewModel.swift; sourceTree = "<group>"; };
+		AD53C25428FC42DA00D5C87F /* ForgotModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +201,7 @@
 		AD53C24028FBC8AB00D5C87F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AD53C25428FC42DA00D5C87F /* ForgotModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 		AD53C24128FBC8AF00D5C87F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AD53C25128FC42C800D5C87F /* ForgotViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -289,8 +295,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C26215828FAC2DA003CE325 /* CustomTextField.swift in Sources */,
+				AD53C25228FC42C800D5C87F /* ForgotViewModel.swift in Sources */,
 				AD53C24B28FBCA5A00D5C87F /* SignUpViewModel.swift in Sources */,
 				1CA7063228F858F6003DFCC1 /* SignInViewController.swift in Sources */,
+				AD53C25528FC42DA00D5C87F /* ForgotModel.swift in Sources */,
 				1CA7062E28F858F6003DFCC1 /* AppDelegate.swift in Sources */,
 				1CA7063028F858F6003DFCC1 /* SceneDelegate.swift in Sources */,
 				AD53C24928FBC9D000D5C87F /* SignInModel.swift in Sources */,

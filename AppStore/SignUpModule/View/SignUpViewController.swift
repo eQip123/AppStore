@@ -114,8 +114,9 @@ class SignUpViewController: UIViewController {
             .tap
             .bind {[weak self] _ in
                 self?.viewModel.getData()
+                self?.viewModel.checkData()
                 
-                if self?.passwordTextField.text == self?.confirmPasswordTextField.text {
+                if self?.viewModel.status.value == true {
                     self?.navigationController?.popViewController(animated: true)
                 } else {
                     let alert = UIAlertController(title: "Ошибка", message: "Пароли не совпадают", preferredStyle: .alert)
