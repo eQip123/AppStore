@@ -23,6 +23,7 @@
 		AD53C24928FBC9D000D5C87F /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C24828FBC9D000D5C87F /* SignInModel.swift */; };
 		AD53C24B28FBCA5A00D5C87F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C24A28FBCA5A00D5C87F /* SignUpViewModel.swift */; };
 		AD53C24D28FBCA6400D5C87F /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C24C28FBCA6400D5C87F /* SignUpModel.swift */; };
+		AD53C25028FC3AE100D5C87F /* SomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C24F28FC3AE100D5C87F /* SomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		AD53C24828FBC9D000D5C87F /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
 		AD53C24A28FBCA5A00D5C87F /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		AD53C24C28FBCA6400D5C87F /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		AD53C24F28FC3AE100D5C87F /* SomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				1CA7063828F858F7003DFCC1 /* LaunchScreen.storyboard */,
 				1CA7063628F858F7003DFCC1 /* Assets.xcassets */,
 				1CA7063B28F858F7003DFCC1 /* Info.plist */,
+				AD53C24F28FC3AE100D5C87F /* SomeViewController.swift */,
 			);
 			path = AppStore;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				1CA7062E28F858F6003DFCC1 /* AppDelegate.swift in Sources */,
 				1CA7063028F858F6003DFCC1 /* SceneDelegate.swift in Sources */,
 				AD53C24928FBC9D000D5C87F /* SignInModel.swift in Sources */,
+				AD53C25028FC3AE100D5C87F /* SomeViewController.swift in Sources */,
 				1CDFA96C28FAD72900F78CB4 /* SignUpViewController.swift in Sources */,
 				AD53C24D28FBCA6400D5C87F /* SignUpModel.swift in Sources */,
 				1CDFA97428FAE31C00F78CB4 /* ForgotViewController.swift in Sources */,

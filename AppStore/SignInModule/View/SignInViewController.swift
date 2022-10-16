@@ -94,7 +94,9 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
+        bindingViewModel()
         setupConstraints()
+        signIn()
         signUp()
         forgotPassword()
     }
@@ -111,6 +113,7 @@ class SignInViewController: UIViewController {
             .orEmpty
             .bind(to: viewModel.pass)
             .disposed(by: disposeBag)
+            
     }
     
     private func setupConstraints() {
@@ -177,6 +180,25 @@ class SignInViewController: UIViewController {
             make.top.equalTo(signInButton.snp.bottom).offset(15)
             make.centerX.equalToSuperview()
         }
+    }
+    private func signIn() {
+        
+        signInButton.rx
+            .tap
+            .bind {[weak self] _ in
+                self?.viewModel.getSavedData()
+                self?.viewModel.canLogIn()
+                if self?.viewModel.status.value == true {
+                    let vc = SomeViewController()
+                    self?.navigationController?.pushViewController(vc, animated: true)
+                } else {
+                    let alert = UIAlertController(title: "Ошибка", message: "Неправильный логин или пароль", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                    self?.present(alert, animated: true, completion: nil)
+                }
+            }
+            .disposed(by: disposeBag)
+        
     }
     private func signUp() {
         
