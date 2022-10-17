@@ -12,6 +12,7 @@ import RxSwift
 class SignUpViewController: UIViewController {
     
     let disposeBag = DisposeBag()
+    let viewModel = SignUpViewModel()
     
     private lazy var titleLabel: UILabel = {
         let title = UILabel()
@@ -85,10 +86,47 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         
+        bindViewModel()
         setupConstraints()
         setupNavigation()
-        signUp()
     }
+    
+    private func bindViewModel() {
+        emailTextField.rx
+            .text
+            .orEmpty
+            .bind(to: viewModel.email)
+            .disposed(by: disposeBag)
+        
+        passwordTextField.rx
+            .text
+            .orEmpty
+            .bind(to: viewModel.pass)
+            .disposed(by: disposeBag)
+        
+        confirmPasswordTextField.rx
+            .text
+            .orEmpty
+            .bind(to: viewModel.secPass)
+            .disposed(by: disposeBag)
+        
+        signUpButton.rx
+            .tap
+            .bind {[weak self] _ in
+                self?.viewModel.getData()
+                self?.viewModel.checkData()
+                
+                if self?.viewModel.status.value == true {
+                    self?.navigationController?.popViewController(animated: true)
+                } else {
+                    let alert = UIAlertController(title: "Ошибка", message: "Пароли не совпадают", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                    self?.present(alert, animated: true, completion: nil)
+                }
+            }
+            .disposed(by: disposeBag)
+    }
+    
     private func setupNavigation() {
         navigationController?.navigationBar.tintColor = .black
     }
@@ -151,15 +189,6 @@ class SignUpViewController: UIViewController {
             make.height.equalTo(50)
             make.width.equalTo(180)
         }
-    }
-    private func signUp() {
-        signUpButton
-            .rx
-            .tap
-            .bind {
-                self.navigationController?.popToRootViewController(animated: true)
-            }.disposed(by: disposeBag)
-        
     }
     }
     
