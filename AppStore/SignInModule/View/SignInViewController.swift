@@ -189,7 +189,7 @@ class SignInViewController: UIViewController {
                 self?.viewModel.getSavedData()
                 self?.viewModel.canLogIn()
                 if self?.viewModel.status.value == true {
-                    let vc = SomeViewController()
+                    let vc = MainViewController()
                     self?.navigationController?.pushViewController(vc, animated: true)
                 } else {
                     let alert = UIAlertController(title: "Ошибка", message: "Неправильный логин или пароль", preferredStyle: .alert)
