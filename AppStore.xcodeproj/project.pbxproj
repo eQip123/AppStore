@@ -12,6 +12,7 @@
 		1C26215128FAA9FC003CE325 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 1C26215028FAA9FC003CE325 /* RxRelay */; };
 		1C26215328FAA9FC003CE325 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1C26215228FAA9FC003CE325 /* RxSwift */; };
 		1C26215828FAC2DA003CE325 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26215728FAC2DA003CE325 /* CustomTextField.swift */; };
+		1C7856D829006B0D00D2D1C0 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7856D729006B0D00D2D1C0 /* UITableViewCell.swift */; };
 		1CA7062E28F858F6003DFCC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA7062D28F858F6003DFCC1 /* AppDelegate.swift */; };
 		1CA7063028F858F6003DFCC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA7062F28F858F6003DFCC1 /* SceneDelegate.swift */; };
 		1CA7063228F858F6003DFCC1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA7063128F858F6003DFCC1 /* SignInViewController.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		1C26215728FAC2DA003CE325 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		1C7856D729006B0D00D2D1C0 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		1CA7062A28F858F6003DFCC1 /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CA7062D28F858F6003DFCC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CA7062F28F858F6003DFCC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,7 +189,6 @@
 		69497ED828FFEECA00BA9F8C /* MainModule */ = {
 			isa = PBXGroup;
 			children = (
-				69497ED928FFEEF100BA9F8C /* MainTabBarController.swift */,
 				69497EDF28FFEF9600BA9F8C /* View */,
 			);
 			path = MainModule;
@@ -212,7 +213,9 @@
 		69497EDF28FFEF9600BA9F8C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				69497ED928FFEEF100BA9F8C /* MainTabBarController.swift */,
 				69497EE028FFF02100BA9F8C /* MainViewController.swift */,
+				1C7856D729006B0D00D2D1C0 /* UITableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C7856D829006B0D00D2D1C0 /* UITableViewCell.swift in Sources */,
 				1C26215828FAC2DA003CE325 /* CustomTextField.swift in Sources */,
 				AD53C25228FC42C800D5C87F /* ForgotViewModel.swift in Sources */,
 				69497EDA28FFEEF100BA9F8C /* MainTabBarController.swift in Sources */,
