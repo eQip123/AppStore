@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Rectangle 5.pdf",
+      "filename" : "Group 8@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Group 8@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Group 8@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

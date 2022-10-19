@@ -19,6 +19,22 @@
 		1CA7063A28F858F7003DFCC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CA7063828F858F7003DFCC1 /* LaunchScreen.storyboard */; };
 		1CDFA96C28FAD72900F78CB4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDFA96B28FAD72900F78CB4 /* SignUpViewController.swift */; };
 		1CDFA97428FAE31C00F78CB4 /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDFA97328FAE31C00F78CB4 /* ForgotViewController.swift */; };
+		69497EDA28FFEEF100BA9F8C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69497ED928FFEEF100BA9F8C /* MainTabBarController.swift */; };
+		69497EDD28FFEF7F00BA9F8C /* NewOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69497EDC28FFEF7F00BA9F8C /* NewOrderViewController.swift */; };
+		69497EE128FFF02100BA9F8C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69497EE028FFF02100BA9F8C /* MainViewController.swift */; };
+		69497EE928FFF08800BA9F8C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69497EE828FFF08800BA9F8C /* InfoViewController.swift */; };
+		69497EEB28FFF09700BA9F8C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69497EEA28FFF09700BA9F8C /* ChatViewController.swift */; };
+		69497EED28FFF0A700BA9F8C /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69497EEC28FFF0A700BA9F8C /* HistoryViewController.swift */; };
+		696E3A8729000C6900A56762 /* SecondCustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696E3A8629000C6900A56762 /* SecondCustomTextField.swift */; };
+		696E3A8B290012BC00A56762 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696E3A8A290012BC00A56762 /* OrderViewController.swift */; };
+		AD53C24728FBC9C200D5C87F /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C24628FBC9C200D5C87F /* SignInViewModel.swift */; };
+		AD53C24928FBC9D000D5C87F /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C24828FBC9D000D5C87F /* SignInModel.swift */; };
+		AD53C24B28FBCA5A00D5C87F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C24A28FBCA5A00D5C87F /* SignUpViewModel.swift */; };
+		AD53C24D28FBCA6400D5C87F /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C24C28FBCA6400D5C87F /* SignUpModel.swift */; };
+		AD53C25028FC3AE100D5C87F /* SomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C24F28FC3AE100D5C87F /* SomeViewController.swift */; };
+		AD53C25228FC42C800D5C87F /* ForgotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C25128FC42C800D5C87F /* ForgotViewModel.swift */; };
+		AD53C25528FC42DA00D5C87F /* ForgotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C25428FC42DA00D5C87F /* ForgotModel.swift */; };
+		AD53C25828FC502200D5C87F /* dataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD53C25628FC502200D5C87F /* dataBase.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +48,22 @@
 		1CA7063B28F858F7003DFCC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CDFA96B28FAD72900F78CB4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1CDFA97328FAE31C00F78CB4 /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
+		69497ED928FFEEF100BA9F8C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		69497EDC28FFEF7F00BA9F8C /* NewOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderViewController.swift; sourceTree = "<group>"; };
+		69497EE028FFF02100BA9F8C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		69497EE828FFF08800BA9F8C /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		69497EEA28FFF09700BA9F8C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		69497EEC28FFF0A700BA9F8C /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		696E3A8629000C6900A56762 /* SecondCustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCustomTextField.swift; sourceTree = "<group>"; };
+		696E3A8A290012BC00A56762 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		AD53C24628FBC9C200D5C87F /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		AD53C24828FBC9D000D5C87F /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
+		AD53C24A28FBCA5A00D5C87F /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		AD53C24C28FBCA6400D5C87F /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		AD53C24F28FC3AE100D5C87F /* SomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeViewController.swift; sourceTree = "<group>"; };
+		AD53C25128FC42C800D5C87F /* ForgotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewModel.swift; sourceTree = "<group>"; };
+		AD53C25428FC42DA00D5C87F /* ForgotModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotModel.swift; sourceTree = "<group>"; };
+		AD53C25728FC502200D5C87F /* dataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dataBase.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				1C26215728FAC2DA003CE325 /* CustomTextField.swift */,
+				696E3A8629000C6900A56762 /* SecondCustomTextField.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -76,6 +109,12 @@
 		1CA7062C28F858F6003DFCC1 /* AppStore */ = {
 			isa = PBXGroup;
 			children = (
+				696E3A88290012A300A56762 /* OrderModule */,
+				69497EE428FFF04F00BA9F8C /* InfoModule */,
+				69497EE328FFF04300BA9F8C /* ChatModule */,
+				69497EE228FFF03300BA9F8C /* HistoryModule */,
+				69497EDB28FFEF1D00BA9F8C /* NewOrderModule */,
+				69497ED828FFEECA00BA9F8C /* MainModule */,
 				1CDFA96D28FAD7D200F78CB4 /* SignInModule */,
 				1CDFA96F28FAD86200F78CB4 /* SignUpModule */,
 				1CDFA97228FAE2FB00F78CB4 /* ForgotModule */,
@@ -84,6 +123,8 @@
 				1CA7063828F858F7003DFCC1 /* LaunchScreen.storyboard */,
 				1CA7063628F858F7003DFCC1 /* Assets.xcassets */,
 				1CA7063B28F858F7003DFCC1 /* Info.plist */,
+				AD53C24F28FC3AE100D5C87F /* SomeViewController.swift */,
+				AD53C25628FC502200D5C87F /* dataBase.xcdatamodeld */,
 			);
 			path = AppStore;
 			sourceTree = "<group>";
@@ -92,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				1CDFA96E28FAD84B00F78CB4 /* View */,
+				AD53C23B28FBC87500D5C87F /* ViewModel */,
+				AD53C23C28FBC87F00D5C87F /* Model */,
 			);
 			path = SignInModule;
 			sourceTree = "<group>";
@@ -108,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				1CDFA97128FAD89900F78CB4 /* View */,
+				AD53C23E28FBC89900D5C87F /* ViewModel */,
+				AD53C23D28FBC89300D5C87F /* Model */,
 			);
 			path = SignUpModule;
 			sourceTree = "<group>";
@@ -132,9 +177,164 @@
 		1CDFA97228FAE2FB00F78CB4 /* ForgotModule */ = {
 			isa = PBXGroup;
 			children = (
-				1CDFA97328FAE31C00F78CB4 /* ForgotViewController.swift */,
+				AD53C23F28FBC8A400D5C87F /* View */,
+				AD53C24128FBC8AF00D5C87F /* ViewModel */,
+				AD53C24028FBC8AB00D5C87F /* Model */,
 			);
 			path = ForgotModule;
+			sourceTree = "<group>";
+		};
+		69497ED828FFEECA00BA9F8C /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				69497ED928FFEEF100BA9F8C /* MainTabBarController.swift */,
+				69497EDF28FFEF9600BA9F8C /* View */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		69497EDB28FFEF1D00BA9F8C /* NewOrderModule */ = {
+			isa = PBXGroup;
+			children = (
+				69497EDE28FFEF8800BA9F8C /* View */,
+			);
+			path = NewOrderModule;
+			sourceTree = "<group>";
+		};
+		69497EDE28FFEF8800BA9F8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69497EDC28FFEF7F00BA9F8C /* NewOrderViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69497EDF28FFEF9600BA9F8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69497EE028FFF02100BA9F8C /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69497EE228FFF03300BA9F8C /* HistoryModule */ = {
+			isa = PBXGroup;
+			children = (
+				69497EE528FFF06600BA9F8C /* View */,
+			);
+			path = HistoryModule;
+			sourceTree = "<group>";
+		};
+		69497EE328FFF04300BA9F8C /* ChatModule */ = {
+			isa = PBXGroup;
+			children = (
+				69497EE628FFF06B00BA9F8C /* View */,
+			);
+			path = ChatModule;
+			sourceTree = "<group>";
+		};
+		69497EE428FFF04F00BA9F8C /* InfoModule */ = {
+			isa = PBXGroup;
+			children = (
+				69497EE728FFF07000BA9F8C /* View */,
+			);
+			path = InfoModule;
+			sourceTree = "<group>";
+		};
+		69497EE528FFF06600BA9F8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69497EEC28FFF0A700BA9F8C /* HistoryViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69497EE628FFF06B00BA9F8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69497EEA28FFF09700BA9F8C /* ChatViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69497EE728FFF07000BA9F8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69497EE828FFF08800BA9F8C /* InfoViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		696E3A88290012A300A56762 /* OrderModule */ = {
+			isa = PBXGroup;
+			children = (
+				696E3A89290012AC00A56762 /* View */,
+			);
+			path = OrderModule;
+			sourceTree = "<group>";
+		};
+		696E3A89290012AC00A56762 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				696E3A8A290012BC00A56762 /* OrderViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD53C23B28FBC87500D5C87F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD53C24628FBC9C200D5C87F /* SignInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AD53C23C28FBC87F00D5C87F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD53C24828FBC9D000D5C87F /* SignInModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD53C23D28FBC89300D5C87F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD53C24C28FBCA6400D5C87F /* SignUpModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD53C23E28FBC89900D5C87F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD53C24A28FBCA5A00D5C87F /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AD53C23F28FBC8A400D5C87F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1CDFA97328FAE31C00F78CB4 /* ForgotViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD53C24028FBC8AB00D5C87F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD53C25428FC42DA00D5C87F /* ForgotModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD53C24128FBC8AF00D5C87F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD53C25128FC42C800D5C87F /* ForgotViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,11 +418,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C26215828FAC2DA003CE325 /* CustomTextField.swift in Sources */,
+				AD53C25228FC42C800D5C87F /* ForgotViewModel.swift in Sources */,
+				69497EDA28FFEEF100BA9F8C /* MainTabBarController.swift in Sources */,
+				69497EED28FFF0A700BA9F8C /* HistoryViewController.swift in Sources */,
+				AD53C24B28FBCA5A00D5C87F /* SignUpViewModel.swift in Sources */,
+				69497EE928FFF08800BA9F8C /* InfoViewController.swift in Sources */,
 				1CA7063228F858F6003DFCC1 /* SignInViewController.swift in Sources */,
+				AD53C25828FC502200D5C87F /* dataBase.xcdatamodeld in Sources */,
+				AD53C25528FC42DA00D5C87F /* ForgotModel.swift in Sources */,
+				696E3A8B290012BC00A56762 /* OrderViewController.swift in Sources */,
+				69497EE128FFF02100BA9F8C /* MainViewController.swift in Sources */,
 				1CA7062E28F858F6003DFCC1 /* AppDelegate.swift in Sources */,
 				1CA7063028F858F6003DFCC1 /* SceneDelegate.swift in Sources */,
+				69497EEB28FFF09700BA9F8C /* ChatViewController.swift in Sources */,
+				AD53C24928FBC9D000D5C87F /* SignInModel.swift in Sources */,
+				AD53C25028FC3AE100D5C87F /* SomeViewController.swift in Sources */,
+				696E3A8729000C6900A56762 /* SecondCustomTextField.swift in Sources */,
 				1CDFA96C28FAD72900F78CB4 /* SignUpViewController.swift in Sources */,
+				69497EDD28FFEF7F00BA9F8C /* NewOrderViewController.swift in Sources */,
+				AD53C24D28FBCA6400D5C87F /* SignUpModel.swift in Sources */,
 				1CDFA97428FAE31C00F78CB4 /* ForgotViewController.swift in Sources */,
+				AD53C24728FBC9C200D5C87F /* SignInViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +690,19 @@
 			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		AD53C25628FC502200D5C87F /* dataBase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD53C25728FC502200D5C87F /* dataBase.xcdatamodel */,
+			);
+			currentVersion = AD53C25728FC502200D5C87F /* dataBase.xcdatamodel */;
+			path = dataBase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1CA7062228F858F6003DFCC1 /* Project object */;
 }

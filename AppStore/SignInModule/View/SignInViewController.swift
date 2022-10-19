@@ -13,6 +13,7 @@ import RxSwift
 class SignInViewController: UIViewController {
     
     let disposeBag = DisposeBag()
+    let viewModel = SignInViewModel()
     
     private lazy var imageLogo: UIImageView = {
         let imageView = UIImageView()
@@ -35,6 +36,7 @@ class SignInViewController: UIViewController {
         textField.layer.cornerRadius = 25
         textField.layer.borderWidth = 1
         textField.placeholder = "Email"
+        textField.text = "Aidar2003@gmail.com"
         return textField
     }()
     
@@ -52,6 +54,7 @@ class SignInViewController: UIViewController {
         textField.layer.borderWidth = 1
         textField.isSecureTextEntry = true
         textField.placeholder = "Password"
+        textField.text = "12345"
         return textField
     }()
     
@@ -93,9 +96,26 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
+        bindingViewModel()
         setupConstraints()
+        signIn()
         signUp()
         forgotPassword()
+    }
+    
+    private func bindingViewModel() {
+        emailTextField.rx
+            .text
+            .orEmpty
+            .bind(to: viewModel.email)
+            .disposed(by: disposeBag)
+        
+        passwordTextField.rx
+            .text
+            .orEmpty
+            .bind(to: viewModel.pass)
+            .disposed(by: disposeBag)
+            
     }
     
     private func setupConstraints() {
@@ -163,6 +183,26 @@ class SignInViewController: UIViewController {
             make.centerX.equalToSuperview()
         }
     }
+    private func signIn() {
+        
+        signInButton.rx
+            .tap
+            .bind {[weak self] _ in
+                self?.viewModel.getSavedData()
+                self?.viewModel.canLogIn()
+                if self?.viewModel.status.value == true {
+//                 let vc = MainViewController()
+                    let mainTabBarController = MainTabBarController()
+                    self?.navigationController?.pushViewController(mainTabBarController, animated: true)
+                } else {
+                    let alert = UIAlertController(title: "Ошибка", message: "Неправильный логин или пароль", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                    self?.present(alert, animated: true, completion: nil)
+                }
+            }
+            .disposed(by: disposeBag)
+        
+    }
     private func signUp() {
         
         signUpButton
@@ -185,3 +225,8 @@ class SignInViewController: UIViewController {
     }
 }
 
+//extension UIViewController {
+//    func hideNavigationBar() {
+//        self.navigationController?.setNavigationBarHidden(true, animated: true)
+//    }
+//}
