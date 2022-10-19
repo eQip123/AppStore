@@ -26,6 +26,7 @@
 		69497EEB28FFF09700BA9F8C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69497EEA28FFF09700BA9F8C /* ChatViewController.swift */; };
 		69497EED28FFF0A700BA9F8C /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69497EEC28FFF0A700BA9F8C /* HistoryViewController.swift */; };
 		696E3A8729000C6900A56762 /* SecondCustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696E3A8629000C6900A56762 /* SecondCustomTextField.swift */; };
+		696E3A8B290012BC00A56762 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696E3A8A290012BC00A56762 /* OrderViewController.swift */; };
 		AD53C24728FBC9C200D5C87F /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C24628FBC9C200D5C87F /* SignInViewModel.swift */; };
 		AD53C24928FBC9D000D5C87F /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C24828FBC9D000D5C87F /* SignInModel.swift */; };
 		AD53C24B28FBCA5A00D5C87F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C24A28FBCA5A00D5C87F /* SignUpViewModel.swift */; };
@@ -54,6 +55,7 @@
 		69497EEA28FFF09700BA9F8C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		69497EEC28FFF0A700BA9F8C /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		696E3A8629000C6900A56762 /* SecondCustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCustomTextField.swift; sourceTree = "<group>"; };
+		696E3A8A290012BC00A56762 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		AD53C24628FBC9C200D5C87F /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		AD53C24828FBC9D000D5C87F /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
 		AD53C24A28FBCA5A00D5C87F /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		1CA7062C28F858F6003DFCC1 /* AppStore */ = {
 			isa = PBXGroup;
 			children = (
+				696E3A88290012A300A56762 /* OrderModule */,
 				69497EE428FFF04F00BA9F8C /* InfoModule */,
 				69497EE328FFF04300BA9F8C /* ChatModule */,
 				69497EE228FFF03300BA9F8C /* HistoryModule */,
@@ -262,6 +265,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		696E3A88290012A300A56762 /* OrderModule */ = {
+			isa = PBXGroup;
+			children = (
+				696E3A89290012AC00A56762 /* View */,
+			);
+			path = OrderModule;
+			sourceTree = "<group>";
+		};
+		696E3A89290012AC00A56762 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				696E3A8A290012BC00A56762 /* OrderViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		AD53C23B28FBC87500D5C87F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,6 +426,7 @@
 				1CA7063228F858F6003DFCC1 /* SignInViewController.swift in Sources */,
 				AD53C25828FC502200D5C87F /* dataBase.xcdatamodeld in Sources */,
 				AD53C25528FC42DA00D5C87F /* ForgotModel.swift in Sources */,
+				696E3A8B290012BC00A56762 /* OrderViewController.swift in Sources */,
 				69497EE128FFF02100BA9F8C /* MainViewController.swift in Sources */,
 				1CA7062E28F858F6003DFCC1 /* AppDelegate.swift in Sources */,
 				1CA7063028F858F6003DFCC1 /* SceneDelegate.swift in Sources */,
