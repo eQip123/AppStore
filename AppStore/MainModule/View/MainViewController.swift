@@ -15,6 +15,8 @@ import RxRelay
 class MainViewController: UIViewController {
     
     let disposeBag = DisposeBag()
+    let viewModel = MainViewModel()
+    
     private lazy var givingShine: UIImageView = {
         let view = UIImageView(image: UIImage(named: "shine"))
         return view
@@ -32,7 +34,13 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         bindTableData()
         setupConstraints()
-}
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        orderTableView.reloadData()
+    }
+    
     private func setupConstraints() {
         view.backgroundColor = .white
         view.addSubview(givingShine)
@@ -50,10 +58,10 @@ class MainViewController: UIViewController {
             make.bottom.equalToSuperview().offset(-42)
         }
     }
-    private func bindTableData() {
-        orderTableView.delegate = self
-        orderTableView.dataSource = self
-    }
+        private func bindTableData() {
+            orderTableView.delegate = self
+            orderTableView.dataSource = self
+        }
     }
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -62,8 +70,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tableViewCell = orderTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MainTableViewCell
-        tableViewCell.firstTitleLabel.text = "Наименование"
-        tableViewCell.secondTitleLabel.text = "Откуда - куда"
+        tableViewCell.firstTitleLabel.text = "\(viewModel.list.value[indexPath.row].name ?? "gg")"
+        tableViewCell.secondTitleLabel.text = "\(viewModel.list.value[indexPath.row].fromWhere ?? "afas") - \(viewModel.list.value[indexPath.row].toWhere ?? "asdaf")"
         return tableViewCell
     }
     
