@@ -18,7 +18,7 @@ class MainTabBarController: UITabBarController {
         let homeVc = MainViewController()
         homeVc.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "home"), tag: 0)
         
-        let historyVc = HistoryViewController()
+        let historyVc = OrderViewController()
         historyVc.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "history"), tag: 1)
         
         let newOrderVc = NewOrderViewController()

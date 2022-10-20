@@ -90,6 +90,7 @@ class OrderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .white
         view.addSubview(backButton)
         backButton.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(22)
