@@ -123,7 +123,7 @@ class NewOrderViewController: UIViewController {
         super.viewDidLoad()
         
         layout()
-       
+        bindingViewModel()
     }
     
     private func bindingViewModel() {
