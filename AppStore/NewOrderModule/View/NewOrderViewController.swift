@@ -8,9 +8,14 @@
 import Foundation
 import UIKit
 import SnapKit
+import RxRelay
+import RxSwift
+import RxCocoa
 
 class NewOrderViewController: UIViewController {
     
+    let disposeBag = DisposeBag()
+    let viewModel = NewOrderViewModel()
     
     private lazy var nameTextField: UITextField = {
         let view = SecondCustomTextField()
@@ -117,7 +122,61 @@ class NewOrderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        layout()
+       
+    }
+    
+    private func bindingViewModel() {
+        nameTextField.rx
+            .text
+            .orEmpty
+            .bind(to: viewModel.name)
+            .disposed(by: disposeBag)
         
+        fromWhereTextField.rx
+            .text
+            .orEmpty
+            .bind(to: viewModel.fromWhere)
+            .disposed(by: disposeBag)
+        
+        toWhereTextField.rx
+            .text
+            .orEmpty
+            .bind(to: viewModel.toWhere)
+            .disposed(by: disposeBag)
+        
+        widthTextField.rx
+            .text
+            .orEmpty
+            .bind(to: viewModel.width)
+            .disposed(by: disposeBag)
+        
+        heightTextField.rx
+            .text
+            .orEmpty
+            .bind(to: viewModel.height)
+            .disposed(by: disposeBag)
+        
+        weightTextField.rx
+            .text
+            .orEmpty
+            .bind(to: viewModel.weight)
+            .disposed(by: disposeBag)
+        
+        commentTextField.rx
+            .text
+            .orEmpty
+            .bind(to: viewModel.comment)
+            .disposed(by: disposeBag)
+        
+        createButton.rx
+            .tap
+            .bind {[weak self] _ in
+                self?.viewModel.saveOrder()
+            }
+    }
+    
+    private func layout() {
         view.backgroundColor = .white
         view.addSubview(createButton)
         createButton.snp.makeConstraints { make in
