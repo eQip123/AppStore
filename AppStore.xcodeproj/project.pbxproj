@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C07126B29012DEE00022C23 /* NewOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07126A29012DEE00022C23 /* NewOrderModel.swift */; };
+		1C07126D29012F1200022C23 /* NewOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07126C29012F1200022C23 /* NewOrderViewModel.swift */; };
 		1C26214C28FAA9D3003CE325 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1C26214B28FAA9D3003CE325 /* SnapKit */; };
 		1C26214F28FAA9FC003CE325 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1C26214E28FAA9FC003CE325 /* RxCocoa */; };
 		1C26215128FAA9FC003CE325 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 1C26215028FAA9FC003CE325 /* RxRelay */; };
@@ -39,6 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C07126A29012DEE00022C23 /* NewOrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderModel.swift; sourceTree = "<group>"; };
+		1C07126C29012F1200022C23 /* NewOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderViewModel.swift; sourceTree = "<group>"; };
 		1C26215728FAC2DA003CE325 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		1C7856D729006B0D00D2D1C0 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		1CA7062A28F858F6003DFCC1 /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +87,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C07126829012DCB00022C23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C07126A29012DEE00022C23 /* NewOrderModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C07126929012DD700022C23 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1C07126C29012F1200022C23 /* NewOrderViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		1C26215628FAC2BF003CE325 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +217,8 @@
 		69497EDB28FFEF1D00BA9F8C /* NewOrderModule */ = {
 			isa = PBXGroup;
 			children = (
+				1C07126929012DD700022C23 /* ViewModel */,
+				1C07126829012DCB00022C23 /* Model */,
 				69497EDE28FFEF8800BA9F8C /* View */,
 			);
 			path = NewOrderModule;
@@ -422,6 +444,7 @@
 			files = (
 				1C7856D829006B0D00D2D1C0 /* UITableViewCell.swift in Sources */,
 				1C26215828FAC2DA003CE325 /* CustomTextField.swift in Sources */,
+				1C07126D29012F1200022C23 /* NewOrderViewModel.swift in Sources */,
 				AD53C25228FC42C800D5C87F /* ForgotViewModel.swift in Sources */,
 				69497EDA28FFEEF100BA9F8C /* MainTabBarController.swift in Sources */,
 				69497EED28FFF0A700BA9F8C /* HistoryViewController.swift in Sources */,
@@ -433,6 +456,7 @@
 				696E3A8B290012BC00A56762 /* OrderViewController.swift in Sources */,
 				69497EE128FFF02100BA9F8C /* MainViewController.swift in Sources */,
 				1CA7062E28F858F6003DFCC1 /* AppDelegate.swift in Sources */,
+				1C07126B29012DEE00022C23 /* NewOrderModel.swift in Sources */,
 				1CA7063028F858F6003DFCC1 /* SceneDelegate.swift in Sources */,
 				69497EEB28FFF09700BA9F8C /* ChatViewController.swift in Sources */,
 				AD53C24928FBC9D000D5C87F /* SignInModel.swift in Sources */,
