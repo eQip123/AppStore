@@ -7,9 +7,15 @@
 
 import Foundation
 import UIKit
+import RxRelay
+import RxSwift
+import RxCocoa
 import SnapKit
 
 class OrderViewController: UIViewController {
+    
+    let disposeBag = DisposeBag()
+    let viewModel = OrderViewModel()
     
     private lazy var backButton: UIButton = {
         let view = UIButton()
@@ -90,6 +96,27 @@ class OrderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupConstraints()
+        acceptLabels()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.getOrder()
+        acceptLabels()
+    }
+    
+    private func acceptLabels() {
+        nameLabel.text = viewModel.name.value
+        fromWhereLabel.text = viewModel.fromWhere.value
+        toWhereLabel.text = viewModel.toWhere.value
+        widthLabel.text = viewModel.width.value
+        heightLabel.text = viewModel.height.value
+        weightLabel.text = viewModel.weight.value
+        commentLabel.text = viewModel.comment.value
+    }
+    
+    private func setupConstraints() {
         view.backgroundColor = .white
         view.addSubview(backButton)
         backButton.snp.makeConstraints { make in
@@ -153,6 +180,8 @@ class OrderViewController: UIViewController {
         }
     }
 }
+
+
 
 class UILabelWithInsets: UILabel {
     public var textInsets: UIEdgeInsets = UIEdgeInsets.zero {
