@@ -102,7 +102,7 @@ class NewOrderViewController: UIViewController {
     
     private lazy var createButton: UIButton = {
         let view = UIButton()
-        view.setImage(UIImage(named: "1"), for: .normal)
+        view.setImage(UIImage(named: "create"), for: .normal)
         return view
     }()
     
