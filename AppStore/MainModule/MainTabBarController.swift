@@ -8,12 +8,12 @@ import UIKit
 import Foundation
 
 class MainTabBarController: UITabBarController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         generateTabBar()
     }
-    
+
     private func generateTabBar() {
         viewControllers = [
             generateVC(viewController: MainViewController(), image: UIImage(named: "Home")),
@@ -29,3 +29,4 @@ class MainTabBarController: UITabBarController {
         return viewController
     }
 }
+
