@@ -35,7 +35,8 @@
 		AD53C25028FC3AE100D5C87F /* SomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C24F28FC3AE100D5C87F /* SomeViewController.swift */; };
 		AD53C25228FC42C800D5C87F /* ForgotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C25128FC42C800D5C87F /* ForgotViewModel.swift */; };
 		AD53C25528FC42DA00D5C87F /* ForgotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD53C25428FC42DA00D5C87F /* ForgotModel.swift */; };
-		AD53C25828FC502200D5C87F /* dataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD53C25628FC502200D5C87F /* dataBase.xcdatamodeld */; };
+		AD982B4A2901346700C0E89C /* OrderStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD982B492901346700C0E89C /* OrderStorage.swift */; };
+		AD982B502901351600C0E89C /* dataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD982B4E2901351600C0E89C /* dataBase.xcdatamodeld */; };
 		ADAF3BA1290129170009CC15 /* NewOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF3BA0290129170009CC15 /* NewOrderModel.swift */; };
 		ADAF3BA3290129200009CC15 /* NewOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF3BA2290129200009CC15 /* NewOrderViewModel.swift */; };
 		ADAF3BA929012CF60009CC15 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF3BA829012CF60009CC15 /* MainModel.swift */; };
@@ -69,7 +70,8 @@
 		AD53C24F28FC3AE100D5C87F /* SomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeViewController.swift; sourceTree = "<group>"; };
 		AD53C25128FC42C800D5C87F /* ForgotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewModel.swift; sourceTree = "<group>"; };
 		AD53C25428FC42DA00D5C87F /* ForgotModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotModel.swift; sourceTree = "<group>"; };
-		AD53C25728FC502200D5C87F /* dataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dataBase.xcdatamodel; sourceTree = "<group>"; };
+		AD982B492901346700C0E89C /* OrderStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStorage.swift; sourceTree = "<group>"; };
+		AD982B4F2901351600C0E89C /* dataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dataBase.xcdatamodel; sourceTree = "<group>"; };
 		ADAF3BA0290129170009CC15 /* NewOrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderModel.swift; sourceTree = "<group>"; };
 		ADAF3BA2290129200009CC15 /* NewOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderViewModel.swift; sourceTree = "<group>"; };
 		ADAF3BA829012CF60009CC15 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
@@ -134,7 +136,8 @@
 				1CA7063628F858F7003DFCC1 /* Assets.xcassets */,
 				1CA7063B28F858F7003DFCC1 /* Info.plist */,
 				AD53C24F28FC3AE100D5C87F /* SomeViewController.swift */,
-				AD53C25628FC502200D5C87F /* dataBase.xcdatamodeld */,
+				AD982B492901346700C0E89C /* OrderStorage.swift */,
+				AD982B4E2901351600C0E89C /* dataBase.xcdatamodeld */,
 			);
 			path = AppStore;
 			sourceTree = "<group>";
@@ -473,8 +476,8 @@
 				AD53C24B28FBCA5A00D5C87F /* SignUpViewModel.swift in Sources */,
 				69497EE928FFF08800BA9F8C /* InfoViewController.swift in Sources */,
 				1CA7063228F858F6003DFCC1 /* SignInViewController.swift in Sources */,
-				AD53C25828FC502200D5C87F /* dataBase.xcdatamodeld in Sources */,
 				AD53C25528FC42DA00D5C87F /* ForgotModel.swift in Sources */,
+				AD982B4A2901346700C0E89C /* OrderStorage.swift in Sources */,
 				696E3A8B290012BC00A56762 /* OrderViewController.swift in Sources */,
 				69497EE128FFF02100BA9F8C /* MainViewController.swift in Sources */,
 				1CA7062E28F858F6003DFCC1 /* AppDelegate.swift in Sources */,
@@ -482,6 +485,7 @@
 				ADAF3BA1290129170009CC15 /* NewOrderModel.swift in Sources */,
 				1CA7063028F858F6003DFCC1 /* SceneDelegate.swift in Sources */,
 				ADAF3BAB29012D050009CC15 /* MainViewModel.swift in Sources */,
+				AD982B502901351600C0E89C /* dataBase.xcdatamodeld in Sources */,
 				69497EEB28FFF09700BA9F8C /* ChatViewController.swift in Sources */,
 				AD53C24928FBC9D000D5C87F /* SignInModel.swift in Sources */,
 				AD53C25028FC3AE100D5C87F /* SomeViewController.swift in Sources */,
@@ -744,12 +748,12 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		AD53C25628FC502200D5C87F /* dataBase.xcdatamodeld */ = {
+		AD982B4E2901351600C0E89C /* dataBase.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				AD53C25728FC502200D5C87F /* dataBase.xcdatamodel */,
+				AD982B4F2901351600C0E89C /* dataBase.xcdatamodel */,
 			);
-			currentVersion = AD53C25728FC502200D5C87F /* dataBase.xcdatamodel */;
+			currentVersion = AD982B4F2901351600C0E89C /* dataBase.xcdatamodel */;
 			path = dataBase.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
