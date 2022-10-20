@@ -38,6 +38,7 @@ class MainViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        viewModel.didGetOrderList()
         orderTableView.reloadData()
     }
     
